@@ -125,3 +125,44 @@ figcaption {
   font-size: 0.95rem;
   color: #555;
 }
+/* Step 1: Visual Design System */
+
+/* Define reusable variables */
+:root {
+  --primary-color: #003366;   /* Deep blue for header/footer */
+  --secondary-color: #0055aa; /* Accent blue for buttons/links */
+  --neutral-color: #f9f9f9;   /* Light background */
+  --text-color: #333;         /* Dark readable text */
+
+  --font-heading: 'Arial Black', sans-serif;
+  --font-body: Arial, sans-serif;
+
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+}
+
+/* Apply global styles */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--neutral-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Links */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
