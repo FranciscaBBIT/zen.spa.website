@@ -323,3 +323,41 @@ footer p {
     grid-template-columns: 1fr; /* single column on mobile */
   }
 }
+/* Step 5: Responsive Design */
+
+/* Mobile first (default styles already set) */
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr; /* collapse to single column */
+  }
+
+  body {
+    font-size: 0.95rem; /* slightly smaller text */
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.1rem; /* larger text for readability */
+  }
+
+  .services-container {
+    gap: var(--spacing-large);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
