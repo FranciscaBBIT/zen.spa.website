@@ -105,3 +105,23 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+/* Gallery images */
+figure {
+  margin: 0 0 30px 0;          /* spacing between images */
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;             /* never wider than its container */
+  height: auto;                /* keep correct proportions */
+  width: 300px;                /* desired maximum width – change this number */
+  border-radius: 8px;          /* optional: soft rounded corners */
+  display: block;
+  margin: 0 auto;              /* centre the image */
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #555;
+}
