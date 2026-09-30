@@ -279,3 +279,47 @@ footer {
 footer p {
   margin: 0 var(--spacing-medium);
 }
+/* Step 4: CSS Grid Layouts */
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-medium);
+  margin: var(--spacing-large);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Contact Page */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: var(--spacing-large);
+  margin: var(--spacing-large);
+}
+
+.contact-info {
+  background-color: white;
+  padding: var(--spacing-medium);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: var(--spacing-medium);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Responsive collapse */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+}
