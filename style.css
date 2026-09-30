@@ -240,3 +240,42 @@ input:focus, select:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 5px var(--secondary-color);
 }
+/* Step 3: Flexbox Layouts */
+
+/* Navigation refinement */
+nav ul {
+  display: flex;
+  justify-content: space-around; /* spread items evenly */
+  align-items: center;
+}
+
+/* Services page cards */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-medium);
+  margin-top: var(--spacing-large);
+}
+
+.service-card {
+  flex: 1; /* each card takes equal width */
+  background-color: white;
+  padding: var(--spacing-medium);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-medium);
+}
+
+footer p {
+  margin: 0 var(--spacing-medium);
+}
