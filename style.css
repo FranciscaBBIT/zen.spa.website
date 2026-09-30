@@ -369,3 +369,13 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+/* Cursive logo with flower */
+header h1.logo,
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: white;
+  margin: 0 0 12px 0;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
