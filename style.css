@@ -1,17 +1,29 @@
-/* Reset some default browser spacing */
+/* Global Design System */
+:root {
+  --primary-color: #ffc0cb;   /* Soft pink for header/background */
+  --secondary-color: #e75480; /* Accent pink for buttons/links */
+  --neutral-color: #fffafc;   /* Very light pink background */
+  --text-color: #333;         /* Dark readable text */
+
+  --font-heading: 'Times New Roman', serif;
+  --font-body: 'Times New Roman', serif;
+
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+}
 body {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-family: var(--font-body);
+  background-color: var(--neutral-color);
+  color: var(--text-color);
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
-/* Header styling */
 header {
-  background-color: #9b1b5c; /* dark blue tech color */
-  color: white;
-  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: var(--spacing-medium);
   text-align: center;
 }
 
@@ -23,27 +35,27 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* Navigation menu */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 var(--spacing-medium);
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
+  color: var(--text-color);
   font-weight: bold;
+  text-decoration: none;
+  font-family: var(--font-heading);
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: var(--secondary-color);
 }
 
 /* Main content */
